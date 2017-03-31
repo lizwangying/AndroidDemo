@@ -1,4 +1,4 @@
-# SomeCodeDemo
+# SomeCodeDemo (Android Demo)
 学习期间代码demo，希望能帮助到更多人
 
 使用方法：
