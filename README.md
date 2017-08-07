@@ -1,16 +1,15 @@
 本来有大神实现，可以代码运行有问题，还有很多同学迷惑不知道怎么使用，自己解决问题之后，分享给大家。
 
-原文：android textview 自动换行 整齐排版
+原文：[android textview 自动换行 整齐排版](http://www.cnblogs.com/goagent/p/5159125.html?utm_source=tuicool&utm_medium=referral)
 
 上效果图：
 
-
-![TextView缩进效果图](http://img.blog.csdn.net/20170329191005888?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjMzMjg2MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-
+![image](https://github.com/lizwangying/AndroidDemo/raw/AutoAplitTextView/demo_auto_split_tv.png)  
 
 通过自定义一个TextView实现，使用起来也很简单。
 
 //使用了databinding
+```
 binding.autoSplitTv.post(new Runnable() {
     @Override
     public void run() {
@@ -24,6 +23,7 @@ autoTv.post(new Runnable() {
         autoTv.setText(autoTv.autoSplitText(autoTv, "第一步、"));
     }
 });
+```
 很多同学在原博主地下留言，大神啊 ，为啥我运行黑屏啊？ 大家互相拥抱道：“你黑我也黑啊？”
 
 我就问了我老大，非UI线程更新UI，必须要 post 呀，问完觉得自己好蠢，老大一眼识破，好棒。

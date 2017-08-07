@@ -72,7 +72,7 @@ public class AutoSplitTextView extends TextView {
             for (String rawTextLine : rawTextLines) {
                 if (paint.measureText(rawTextLine) <= tvWidth) {
                     //如果行宽度在空间范围之内，就不处理了
-                    sbNewText.append(rawTextLine+"\n");
+                    sbNewText.append(rawTextLine + "\n");
                 } else {
                     //否则按字符测量，在超过可用宽度的前一个字符处，手动替换，加上换行，缩进
                     float lineWidth = 0;
@@ -102,7 +102,7 @@ public class AutoSplitTextView extends TextView {
             }
             Log.e("haha", sbNewText.toString());
             return sbNewText.toString();
-        }else {
+        } else {
             return "";
         }
     }
