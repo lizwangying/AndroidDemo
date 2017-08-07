@@ -4,7 +4,7 @@
 
 上效果图：
 
-![image](https://github.com/lizwangying/AndroidDemo/raw/AutoAplitTextView/demo_auto_split_tv.png)  
+![image](https://github.com/lizwangying/AndroidDemo/raw/AutoAplitTextView/screenshots/demo_auto_split_tv.png)  
 
 通过自定义一个TextView实现，使用起来也很简单。
 
