@@ -8,3 +8,4 @@
 ## branch：    
 
 1. AutoSplitTextView: 实现 Android 换行缩进 
+2. AutoCompleteTextView: 实现输入邮箱自动提醒
