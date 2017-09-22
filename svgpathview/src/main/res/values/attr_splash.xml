@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SVGPathView">
+        <attr name="fillColor" format="color" />                  //填充颜色
+        <attr name="strokeColor" format="color" />                //轮廓颜色
+        <attr name="strokeWidth" format="dimension" />            //轮廓宽度
+        <attr name="originalWidth" format="integer" />            //原图宽度
+        <attr name="originalHeight" format="integer" />           //原图高度
+        <attr name="strokeDrawingDuration" format="integer" />    //轮廓绘制时长
+        <attr name="fillDuration" format="integer" />             //填充时长
+        <attr name="traceLineColor" format="color"/>              //追击线的颜色，效果是比轮廓颜色深，然后绕着轮廓跑
+        <attr name="traceLineWidth" format="dimension"/>          //追击线长度
+        <attr name="fillPercentage" format="integer"/>            //填充百分比，可以当progressBar用
+        <attr name="clippingTransform" format="enum">             //填充的波浪样式
+            <enum name="plain" value="0"/>                        //直线
+            <enum name="waves" value="1"/>                        //波浪
+        </attr>
+        <attr name="needFillProgress" format="boolean"/>          //需要progress么？默认false
+    </declare-styleable>
+</resources>

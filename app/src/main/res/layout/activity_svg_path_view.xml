@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dashCircle="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <LinearLayout
+        android:id="@+id/details_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f8f8f8"
+                android:orientation="horizontal"
+                android:padding="40dp">
+
+                <com.liz.wangying.svgpathview.SVGPathView
+                    android:id="@+id/svg_path_view1"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    app:fillDuration="2000"
+                    app:needFillProgress="false"
+                    app:originalHeight="128"
+                    app:originalWidth="128"
+                    app:strokeColor="@color/gray"
+                    app:strokeDrawingDuration="1000"
+                    app:strokeWidth="1dp" />
+
+                <com.liz.wangying.svgpathview.SVGPathView
+                    android:id="@+id/svg_path_view2"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    app:fillDuration="2000"
+                    app:originalHeight="128"
+                    app:originalWidth="128"
+                    app:strokeColor="@color/gray"
+                    app:strokeDrawingDuration="1000"
+                    app:strokeWidth="1dp" />
+
+                <com.liz.wangying.svgpathview.SVGPathView
+                    android:id="@+id/svg_path_view3"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentBottom="true"
+                    app:fillDuration="2000"
+                    app:originalHeight="128"
+                    app:originalWidth="128"
+                    app:strokeColor="@color/gray"
+                    app:strokeDrawingDuration="1000"
+                    app:strokeWidth="1dp" />
+
+                <com.liz.wangying.svgpathview.SVGPathView
+                    android:id="@+id/svg_path_view4"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    app:fillDuration="2000"
+                    app:originalHeight="128"
+                    app:originalWidth="128"
+                    app:strokeColor="@color/gray"
+                    app:strokeDrawingDuration="1000"
+                    app:strokeWidth="1dp" />
+
+                <com.liz.wangying.svgpathview.SVGPathView
+                    android:id="@+id/animated_svg_view"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    app:needFillProgress="false"
+                    app:originalHeight="400"
+                    app:originalWidth="400"
+                    app:strokeColor="@color/gray"
+                    app:strokeDrawingDuration="1500"
+                    app:strokeWidth="1dp"
+                    app:traceLineColor="#000"
+                    app:traceLineWidth="10dp" />
+            </RelativeLayout>
+
+            <com.example.liz.androiddemo.view.DashCircleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="180dp"
+                dashCircle:circleRadius="250dp"
+                dashCircle:dashStrokeColor="#d9d9d9"
+                dashCircle:dashStrokeWidth="1dp"
+                dashCircle:drawingSpeed="15"
+                dashCircle:startAngle="-180" />
+
+            <com.example.liz.androiddemo.view.DashCircleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:layout_marginRight="100dp"
+                dashCircle:circleRadius="170dp"
+                dashCircle:dashStrokeColor="#d9d9d9"
+                dashCircle:dashStrokeWidth="1dp"
+                dashCircle:drawingSpeed="15"
+                dashCircle:startAngle="-90" />
+
+            <com.example.liz.androiddemo.view.DashCircleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="100dp"
+                dashCircle:circleRadius="170dp"
+                dashCircle:dashStrokeColor="#d9d9d9"
+                dashCircle:dashStrokeWidth="1dp"
+                dashCircle:drawingSpeed="15"
+                dashCircle:startAngle="0" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:paddingTop="20dp"
+            android:text="我能理财，一键式理财APP"
+            android:textColor="#555"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/fill_container"
+                android:layout_width="42dp"
+                android:layout_height="42dp">
+
+                <View
+                    android:id="@+id/view_icon_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_rect_corner" />
+
+
+                <com.liz.wangying.svgpathview.SVGPathView
+                    android:id="@+id/svg_logo_red"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    app:clippingTransform="waves"
+                    app:fillColor="@color/white"
+                    app:fillDuration="500"
+                    app:needFillProgress="true"
+                    app:originalHeight="512"
+                    app:originalWidth="512"
+                    app:strokeColor="@color/white"
+                    app:strokeDrawingDuration="1500"
+                    app:strokeWidth="1dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_wonenglc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-16dp"
+                android:text="我能理财"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2016xxxxxxxxx"
+                android:textColor="#e3e3e3"
+                android:textSize="12dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DashCircleView">
+        <attr name="dashStrokeColor" format="color" />
+        <attr name="dashStrokeWidth" format="dimension" />
+        <attr name="strokeLineWidth" format="dimension" />
+        <attr name="strokeBlankWidth" format="dimension" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="drawingSpeed" format="integer" />
+        <attr name="ifRepeatDrawing" format="boolean" />
+        <attr name="startAngle" format="integer"/>
+    </declare-styleable>
+</resources>
